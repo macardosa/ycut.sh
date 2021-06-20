@@ -23,7 +23,7 @@ elif [[ "-h" =~ "$1" ]]; then
     echo -e "\tprovided link, or, if -t flag is specified, only the time"
     echo -e "\tportion specified is saved"
     echo "USAGE"
-    echo -e "\tycut link_of_video -t hh:mm:ss-hh:mm:ss -f fileformat"
+    echo -e "\tycut.sh link_of_video -t hh:mm:ss-hh:mm:ss -f fileformat"
     echo "INPUT"
     echo -e "\tThe link of the video (MANDATORY)"
     echo -e "\tThe portion of the video to trim (OPTIONAL)"
