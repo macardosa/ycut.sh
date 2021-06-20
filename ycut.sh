@@ -47,10 +47,10 @@ youtube-dl --no-progress --no-warnings --quiet --output _out $1
         dt=$((end-ini))
 
         if [[ -n $4 && $4 == '-f' && -n $5 ]]; then
-            ffmpeg -ss $ini -i _out.mp4 -t $dt -f $5 _cut.$5 -y\
+            ffmpeg -ss $ini -i _out.* -t $dt -f $5 _cut.$5 -y\
                 -hide_banner -loglevel error
         else
-            ffmpeg -ss $ini -i _out.mp4 -t $dt -c copy _cut.mp4 -y \
+            ffmpeg -ss $ini -i _out.* -t $dt -c copy _cut.mp4 -y \
                 -hide_banner -loglevel error
         fi
         rm _out.*
