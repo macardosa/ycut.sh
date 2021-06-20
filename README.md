@@ -5,7 +5,7 @@
 
 ## USAGE
 	```
-    ycut link_of_video -t hh:mm:ss-hh:mm:ss -f fileformat
+    ycut.sh link_of_video -t hh:mm:ss-hh:mm:ss -f fileformat
     ```
 ## INPUT
 	- The link of the video (MANDATORY)
