@@ -53,6 +53,6 @@ youtube-dl --no-progress --no-warnings --quiet --output _out $1
             ffmpeg -ss $ini -i _out.mp4 -t $dt -c copy _cut.mp4 -y \
                 -hide_banner -loglevel error
         fi
-        rm _out.mp4
+        rm _out.*
      fi
  fi
